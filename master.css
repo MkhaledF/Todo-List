@@ -1,0 +1,133 @@
+.cercular-center {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #ADD8E6;
+}
+#centerDiv {
+    display: flex;
+    justify-content: center;
+    font-family: "Noto Kufi Arabic", sans-serif;
+}
+#parent {
+    margin: 60px;
+    background-color: #eee;
+    width: 1000px;
+}
+#header {
+    display: flex;
+    align-items: center;
+    background-color: #0047AB;
+    padding: 0 5px;
+    height: 50px;
+    text-align: center;
+}
+#headText {
+    flex: 1;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+button {
+    border: none;
+    font-size: 13px;
+    box-shadow: 0px 3px 5px rgba(168, 168, 168, 0.38);
+    cursor: pointer;
+}
+#add {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+#add:hover {
+    background-color: gold;
+}
+#content {
+    background-color: #eee;
+    min-height: 20px;
+}
+#tasks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    transition: 0.3s;
+    margin: 15px;
+}
+#tasks:hover {
+    box-shadow: 0px 0px 10px gray;
+}
+#info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.date {
+    font-size: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+#tools {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-left: 30px;
+}
+.actionBtn {
+    color: white;
+    transition: 0.3s;
+}
+#edit {
+    background-color: #008eff;
+}
+#edit:hover {
+    background-color: darkblue;
+}
+#trash {
+    background-color: #ff4032;
+}
+#trash:hover {
+    background-color: darkred;
+}
+.name {
+    text-align: right;
+    margin-right: 20px;
+}
+.isDone {
+    color: white;
+    background-color: #3fa943;
+}
+.notDone {
+    color: black;
+    background-color: white;
+}
+
+.check {
+    background-color: #3fa943;
+}
+.check:hover {
+    background-color: darkgreen;
+}
+.x {
+    background-color: #79008e;
+}
+.x:hover {
+    background-color: #550762;
+}
+
+@media (max-width: 600px) {
+    #content {
+        width: 350px;
+    }
+    #tools {
+        width: 120px;
+        margin: 15px 10px;
+    }
+}
